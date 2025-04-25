@@ -1,20 +1,17 @@
 {
   "name": "@cuddlynest/common",
-  "version": "0.0.1",
+  "version": "0.0.4",
   "private": false,
-  "type": "module",
   "main": "./dist/index.js",
   "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
-  "exports": {
-    "./package.json": "./package.json",
-    ".": {
-      "development": "./src/index.ts",
-      "types": "./dist/index.d.ts",
-      "import": "./dist/index.js",
-      "default": "./dist/index.js"
-    }
+  "scripts": {
+    "dev:watch": "tsc -b tsconfig.lib.json --watch"
   },
+  "files": [
+    "dist",
+    "README.md"
+  ],
   "dependencies": {
     "tslib": "^2.3.0"
   }
